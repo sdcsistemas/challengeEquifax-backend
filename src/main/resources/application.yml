@@ -1,0 +1,25 @@
+server:
+  port: 8080
+  error.include-message: ALWAYS
+
+equifax:
+  app:
+    appName: challenge-equifax
+
+info:
+  app:
+    name: "java-equifax-challenge"
+    description: "Application to manage the Client resource"
+    version: 1.0
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:transfers
+    username: sa
+    password: password
+    driverClassName: org.h2.Driver
+  jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+  h2:
+    console:
+      enabled: true
